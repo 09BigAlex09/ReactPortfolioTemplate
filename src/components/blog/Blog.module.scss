@@ -1,0 +1,49 @@
+@import "../../variables.modules";
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: $purple;
+  text-align: center;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: $dark;
+  text-align: center;
+}
+
+.author {
+  font-size: 1rem;
+  color: $pink;
+  text-align: center;
+}
+
+.shadowed {
+  @extend .shadowed;
+}
+
+.articleLink {
+  color: $white;
+  background: $purple;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 200ms, color 200ms, transform 150ms;
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: $green;
+    color: $white;
+    transform: translateY(-2px) scale(1.04);
+  }
+}

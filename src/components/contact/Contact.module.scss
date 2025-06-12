@@ -1,0 +1,13 @@
+@import "../../variables.modules";
+
+.shadowed {
+  @extend .shadowed;
+}
+
+.dark {
+  background: none;
+}
+
+.light {
+  background: none;
+}
